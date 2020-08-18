@@ -1,0 +1,29 @@
+//colors
+
+$red: #FA5961 !default;
+$black: #000000 !default;
+$dark-grey: #242236 !default;
+$grey: #B5A49A !default;
+$light-grey: rgba(0, 0, 0, 0.5) !default;
+$white: #FFFFFF !default;
+
+
+//sizes
+
+$xxs: 0.525vw !default;  //10px
+$xs: 0.63vw !default;   //12px
+$s: 0.73vw !default;   //14px
+$m: 0.835vw !default;   //16px
+$l: 0.94vw !default;   //18px
+$ml: 1.04vw !default;   //20px
+$xl: 1.3vw !default;   //25px
+$xxl: 1.62vw !default;   //30px
+$xxxl: 1.92vw !default;   //35px
+$xxxxl: 2.6vw !default;   //50px
+
+
+%centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

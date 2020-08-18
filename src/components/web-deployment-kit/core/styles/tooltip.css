@@ -1,0 +1,38 @@
+.w-tooltip .w-tooltip__text {
+  display: none;
+  width: auto;
+  min-width: 8.5vw;
+  max-width: 100%;
+  background-color: rgba(0,0,0, 0.6);;
+  color: #fff;
+  text-align: center;
+  padding: 5px 20px;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+
+  transition: opacity 300ms;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.w-tooltip .w-tooltip__text--right {
+  left: 105%;
+}
+
+.w-tooltip .w-tooltip__text--top {
+  bottom: 115%;
+}
+
+.w-tooltip .w-tooltip__text--left {
+  right: 105%;
+}
+
+.w-tooltip .w-tooltip__text--bottom {
+  top: 115%;
+}
+
+.w-tooltip:hover  .w-tooltip__text {
+  display: block;
+}

@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  height: 100%;
+  .app-container {
+    overflow: auto;
+    background-color: #F0F0F1;
+    min-height: 41%;
+    padding: 122px 5% 80px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .app {
+    user-select: none;
+    .app-container {
+      padding: 122px 3% 80px;
+    }
+  }
+}
+
+.app.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}

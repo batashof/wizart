@@ -1,0 +1,148 @@
+.cart {
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    color: #242236;
+    margin-bottom: 39px;
+  }
+  .table-container {
+    .table-row {
+
+      .cell {
+        font-weight: 800 !important;
+        font-size: $ml !important;
+        span {
+          font-weight: 400;
+          color: $light-grey;
+        }
+
+        .add-icon {
+          font-size: $m !important;
+
+        }
+
+        .remove-icon {
+          font-size: $m !important;
+        }
+
+      }
+    }
+  }
+  .table-container-mobile {
+    display: none;
+    .table-row {
+      .row-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        span {
+          font-size: 20px;
+        }
+          h1 {
+            font-size: 20px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+
+          }
+        .counter {
+          display: flex;
+          align-items: center;
+          h1 {
+            margin: 0 20px;
+          }
+        }
+
+          h2 {
+          font-size: 16px;
+          margin-left: 30px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cart-footer {
+    margin-top: 42px;
+    height: 6.4vw;
+    background-color: $white;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 45px;
+      height: 100%;
+
+      .item {
+        p {
+          font-size: $ml;
+          font-weight: 500;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        h1 {
+          font-size: $xxl;
+          font-weight: 800;
+          margin: 0;
+        }
+        &:last-child {
+          text-align: right;
+          h1 {
+            font-size: 2.348vw;
+            margin-top: -0.5vw;
+          }
+        }
+
+      }
+
+    }
+
+
+  }
+  .checkout-button {
+    margin-top: 5%;
+  }
+  @media screen and (max-width: 896px) {
+    .table-container-mobile {
+      display: block;
+    }
+    .table-container {
+      display: none;
+    }
+
+      .cart-footer {
+      height: 100%;
+      .container {
+        flex-flow: column;
+        align-items: start;
+        .item {
+          margin-top: 25px;
+          p {
+            font-size: 20px;
+            margin-bottom: -3px;
+
+          }
+          h1 {
+            font-size: 25px;
+
+          }
+          &:last-child {
+            margin-top: 40px;
+            margin-bottom: 30px;
+
+            text-align: left;
+            h1 {
+              font-size: 45px;
+              margin-top: -0.5vw;
+            }
+          }
+
+        }
+      }
+    }
+    .checkout-button {
+      float: right;
+    }
+  }
+
+}

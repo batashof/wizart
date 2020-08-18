@@ -1,0 +1,215 @@
+.card {
+  width: 12vw;
+  height: 17.45vw;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  .media {
+    height: 12vw;
+  }
+  .catalog {
+    background-color: $red;
+    margin-top: 10.5vw;
+    margin-left: 8vw;
+    width: 2.5vw !important;
+    min-height: 2.5vw !important;
+    max-height: 2.5vw !important;
+    position: absolute;
+
+    span {
+      display: none;
+      //max-width: 8vw;
+      //width: 8vw;
+      //span {
+      //  display: none;
+      //}
+    }
+
+    .w-tooltip__text {
+      display: none;
+    }
+  }
+  .content {
+    padding: 1vw;
+    height: 3.4vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .name {
+      font-size: $m;
+      color: $black;
+      width: 8vw;
+      line-height: 1vw;
+      min-height: 2vw;
+    }
+
+    .bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price {
+        font-size: $l;
+        font-weight: 800;
+        color: $black;
+      }
+    }
+    .card-button {
+      width: 3.86vw;
+      height: 1.88vw;
+      border: 1px solid #C1C1C1;
+      box-sizing: border-box;
+      border-radius: 1vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+      p {
+        opacity: 0.5;
+        font-size: $xs;
+        line-height: 0.4vw;
+
+      }
+
+      .card-button-icon {
+        width: 1vw;
+        height: 1vw;
+        padding-top: 0.1vw;
+
+      }
+
+      .card-button-dot {
+        margin-top: -1vw;
+        margin-left: -0.7vw;
+        width: 0.3vw;
+        height: 0.3vw;
+        background-color: black;
+        border-radius: 50%;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .card {
+    width: 21.75vw;
+    height: 37vw;
+    .media {
+      height: 21.75vw;
+    }
+    .catalog {
+      width: 21.75vw !important;
+      min-height: 4.7vw !important;
+      margin-top: 32.3vw;
+      border-radius: 0 !important;
+      margin-left: 0;
+      box-shadow: none;
+      svg {
+        width: 1.4vw;
+        height: 1.4vw;
+        margin-right: 1.31vw !important;
+      }
+      span {
+        display: flex;
+        font-size: 1.31vw;
+        color: $white;
+
+      }
+    }
+    .content {
+      padding: 2vw;
+      height: 6.5vw;
+      .name {
+        font-size: 1.83vw;
+        width: 100%;
+        line-height: 2vw;
+        min-height: 3.8vw;
+      }
+
+      .bottom-content {
+        .price {
+          font-size: 1.83vw;
+        }
+      }
+      .card-button {
+        width: 4.17vw;
+        height: 4.17vw;
+        border-radius: 50%;
+        p {
+          display: none;
+        }
+
+        .card-button-icon {
+          width: 15px;
+          height: 15px;
+
+        }
+
+        .card-button-dot {
+          position: absolute;
+          margin-left: 5px;
+          width: 0.5vw;
+          height: 0.5vw;
+          background-color: black;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 475px) {
+  .card {
+    width: 44.5vw;
+    height: 75.7vw;
+    .media {
+      height: 44.5vw;
+    }
+    .catalog {
+      width: 44.5vw !important;
+      min-height: 9.43vw !important;
+      margin-top: 66.2vw;
+      border-radius: 0;
+      margin-left: 0;
+      box-shadow: none;
+
+        span {
+          display: flex;
+          font-size: 2.6vw;
+          color: $white;
+
+        }
+        svg {
+          width: 2.6vw;
+          height: 2.6vw;
+          margin-right: 2.6vw !important;
+        }
+
+    }
+    .content {
+      padding: 3vw;
+      height: 15.4vw;
+      .name {
+        font-size: 3.7vw;
+        line-height: 4vw;
+      }
+
+      .bottom-content {
+        .price {
+          font-size: 3.7vw;
+        }
+      }
+      .card-button {
+        width: 8.37vw;
+        height: 8.37vw;
+        border-radius: 50%;
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}
